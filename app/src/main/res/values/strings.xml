@@ -1,14 +1,12 @@
 <resources>
-    <string name="app_name">Citypassenger Widget</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">Citypassenger WI-FI manager</string>
+    <string name="alert_dialog_ok">ok</string>
+    <!-- Login form -->
+    <string name="login_form_title">Citypassenger</string>
+    <string name="login_form_username">email</string>
+    <string name="login_form_password">Password</string>
+    <string name="login_form_login">LOGIN</string>
+    <!-- Widget -->
     <string name="appwidget_text">Citypassenger</string>
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>

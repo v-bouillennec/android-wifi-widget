@@ -1,21 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/Widget.MyApplication.AppWidget.Container"
     android:id="@+id/linear"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/rounded_box"
-    android:theme="@style/Theme.MyApplication.AppWidgetContainer"
     android:orientation="vertical"
-    android:layout_alignParentTop="true" >
+    android:layout_alignParentTop="true"
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/appwidget_text"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingTop="5dp"
+        android:paddingTop="3dp"
         android:paddingBottom="3dp"
+        android:layout_marginTop="3dp"
         android:contentDescription="Citypassenger"
         android:text="Force du signal WI-FI"
         android:textSize="24sp"
@@ -36,11 +36,11 @@
             android:background="#B7FF31"
             android:layout_gravity="center"
             android:textStyle="bold"
-            android:textSize="40dp"
+            android:textSize="50sp"
             android:gravity="center"
             android:textColor="#2b2b2b"
             android:visibility="visible"
-            android:text="99\n-75dBm"
+            android:text="99%"
             android:fontFamily="@font/rubik"
             />
 
@@ -52,7 +52,7 @@
             android:background="#FF7931"
             android:gravity="center"
             android:textColor="#2b2b2b"
-            android:textSize="40dp"
+            android:textSize="50sp"
             android:textStyle="bold"
             android:visibility="invisible"
             android:fontFamily="@font/rubik" />
@@ -65,7 +65,7 @@
             android:fontFamily="@font/rubik"
             android:gravity="center"
             android:textColor="#2b2b2b"
-            android:textSize="40dp"
+            android:textSize="50sp"
             android:textStyle="bold"
             android:visibility="invisible" />
     </RelativeLayout>
@@ -77,12 +77,10 @@
         android:layout_gravity="center"
         android:textAlignment="center"
         android:paddingTop="3dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="3dp"
         android:text="Citypassenger"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
-
-
 
 </LinearLayout>

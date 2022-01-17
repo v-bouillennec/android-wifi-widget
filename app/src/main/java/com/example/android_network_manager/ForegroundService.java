@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.android_network_manager;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -14,6 +14,7 @@ import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
 public class ForegroundService extends Service {
+    PopupWindow popupWindow = null;
     public ForegroundService() {
     }
 
@@ -24,7 +25,6 @@ public class ForegroundService extends Service {
 
     @Override
     public void onCreate() {
-        Log.i("log", "new foreground");
         super.onCreate();
         // create the custom or default notification
         // based on the android version
@@ -35,8 +35,8 @@ public class ForegroundService extends Service {
 
         // create an instance of Window class
         // and display the content on screen
-        Window window = new Window(this);
-        window.open();
+        popupWindow = new PopupWindow(this);
+        popupWindow.open();
     }
 
     @Override
@@ -76,6 +76,7 @@ public class ForegroundService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.i("log", "delete foreground");
+        Log.i("log", "service destroy");
+        popupWindow.close();
     }
 }

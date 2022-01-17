@@ -1,37 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/close_btn_div"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
 
-        <LinearLayout
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_marginRight="10dp"
+            android:translationZ="1dp">
 
             <TextView
-                android:id="@+id/titleText"
-                android:layout_gravity="center"
+                android:id="@+id/close_widget_btn"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:background="@drawable/cancel_circle"
+                android:padding="0dp"
+                android:drawableTop="@drawable/ic_baseline_close_24"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Displaying over other apps!"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:padding="10dp"/>
+                android:layout_gravity="center">
 
-            <Button
-                android:id="@+id/window_close"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Remove" />
+                <TextView
+                    android:id="@+id/green_bubble"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/green_circle"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:text="99%"
+                    android:textColor="#2b2b2b"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
 
+                <TextView
+                    android:id="@+id/orange_bubble"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/orange_circle"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:textColor="#2b2b2b"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:text="99%"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/red_bubble"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/red_circle"
+                    android:fontFamily="@font/rubik"
+                    android:gravity="center"
+                    android:textColor="#2b2b2b"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
 </RelativeLayout>
