@@ -15,6 +15,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.myapplication.databinding.FragmentFirstBinding;
 
+//The fragment element used to build the wifi widget
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
